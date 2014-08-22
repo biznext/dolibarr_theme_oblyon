@@ -1,5 +1,10 @@
 -------- ChangeLog Theme Oblyon --------
 
+Version 1.6
+ - Compatibility with 3.6
+	* Move module trips from section accountancy to hrm
+	* Add module salaries into accountancy
+ 
 Version 1.5
  - Added: Define Colours Functionality (see style.css.php file, line 80)
  - Minor bugs fixes
