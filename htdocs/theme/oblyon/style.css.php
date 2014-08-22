@@ -1156,7 +1156,7 @@ div.mainmenu.accounting {
 
 $moduletomainmenu=array('user'=>'','syslog'=>'','societe'=>'companies','projet'=>'project','propale'=>'commercial','commande'=>'commercial',
 	'produit'=>'products','service'=>'products','stock'=>'products',
-	'don'=>'accountancy','tax'=>'accountancy','banque'=>'accountancy','facture'=>'accountancy','compta'=>'accountancy','accounting'=>'accountancy','adherent'=>'members','import'=>'tools','export'=>'tools','mailing'=>'tools',
+	'don'=>'accountancy','tax'=>'accountancy','salaries'=>'accountancy','banque'=>'accountancy','facture'=>'accountancy','compta'=>'accountancy','accounting'=>'accountancy','adherent'=>'members','import'=>'tools','export'=>'tools','mailing'=>'tools',
 	'contrat'=>'commercial','ficheinter'=>'commercial','deplacement'=>'commercial',
 	'fournisseur'=>'companies', 'ftp'=>'', 'externalsite'=>'',
 	'barcode'=>'','fckeditor'=>'','categorie'=>'',

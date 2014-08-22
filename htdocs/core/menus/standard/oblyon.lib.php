@@ -786,6 +786,11 @@ function print_left_oblyon_menu($db,$menu_array_before,$menu_array_after,&$tabMe
 			}
 
 			// Taxes and social contributions
+			if (! empty($conf->tax->enabled) || ! empty($conf->salaries->enabled))
+			{
+				$newmenu->add("/compta/charges/index.php?leftmenu=tax&amp;mainmenu=accountancy",$langs->trans("MenuTaxAndDividends"), 0, $user->rights->tax->charges->lire, '', $mainmenu, 'tax');
+			}
+			
 			if (! empty($conf->salaries->enabled))
 			{
 				// Salaries
@@ -798,7 +803,6 @@ function print_left_oblyon_menu($db,$menu_array_before,$menu_array_after,&$tabMe
 			if (! empty($conf->tax->enabled))
 			{
 				// Social contributions
-				$newmenu->add("/compta/charges/index.php?leftmenu=tax&amp;mainmenu=accountancy",$langs->trans("MenuTaxAndDividends"), 0, $user->rights->tax->charges->lire, '', $mainmenu, 'tax');
 				$newmenu->add("/compta/sociales/index.php?leftmenu=tax_social",$langs->trans("MenuSocialContributions"),1,$user->rights->tax->charges->lire);
 				$newmenu->add("/compta/sociales/charges.php?leftmenu=tax_social&action=create",$langs->trans("MenuNewSocialContribution"), 2, $user->rights->tax->charges->creer);
 				$newmenu->add("/compta/charges/index.php?leftmenu=tax_social&amp;mainmenu=accountancy&amp;mode=sconly",$langs->trans("Payments"), 2, $user->rights->tax->charges->lire);
